@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Jam Dunia</title>
+    <style type="text/css">
+    #clock {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="london"></div>
+    <div id="paris"></div>
+    <div id="istanbul"></div>
+    <div id="moskow"></div>
+    <div id="abudhabi"></div>
+    <div id="islamabad"></div>
+    <div id="astana"></div>
+    <div id="jakarta"></div>
+    <div id="beijing"></div>
+    <div id="tokyo"></div>
+
+
+<script type="text/javascript">
+    setInterval(displayclock, 1000);
+    function displayclock() {
+        let time = new Date();
+        let hrs1  = time.getHours();
+        let min1  = time.getMinutes();
+        let sec1  = time.getSeconds();
+
+        let hrs2  = time.getHours() + 1;
+        let min2  = time.getMinutes() + 1;
+        if (min2>59)
+            min2=min2-60;
+        let sec2  = time.getSeconds() + 1 ;
+            if (sec2>59)
+            sec2=sec2-60;
+
+        let hrs3  = time.getHours() + 2;
+        let min3  = time.getMinutes() + 2;
+        if (min3>59)
+            min3=min3-60;
+        let sec3  = time.getSeconds() + 2;
+        if (sec3>59)
+            sec3=sec3-60;
+
+        let hrs4  = time.getHours() + 3;
+        let min4  = time.getMinutes() + 3;
+        if (min4>59)
+            min4=min4-60;
+        let sec4  = time.getSeconds() + 3;
+        if (sec4>59)
+            sec4=sec4-60;
+
+        let hrs5  = time.getHours() + 4;
+        let min5  = time.getMinutes() + 4;
+        if (min5>59)
+            min5=min5-60;
+        let sec5  = time.getSeconds() + 4;
+        if (sec5>59)
+            sec5=sec5-60;
+
+        let hrs6  = time.getHours() + 5;
+        let min6  = time.getMinutes() + 5;
+        if (min6>59)
+            min6=min6-60;
+        let sec6  = time.getSeconds() + 5;
+        if (sec6>59)
+            sec6=sec6-60;
+
+        let hrs7  = time.getHours() + 6;
+        let min7  = time.getMinutes() + 6;
+        if (min7>59)
+            min7=min7-60;
+        let sec7  = time.getSeconds() + 6;
+        if (sec7>59)
+            sec7=sec7-60;
+
+        let hrs8  = time.getHours() + 7;
+        let min8  = time.getMinutes() + 7;
+        if (min8>59)
+            min8=min8-60;
+        let sec8  = time.getSeconds() + 7;
+        if (sec8>59)
+            sec8=sec8-60;
+
+        let hrs9  = time.getHours() + 8;
+        let min9  = time.getMinutes() + 8;
+        if (min9>59)
+            min9=min9-60;
+        let sec9  = time.getSeconds() + 8;
+        if (sec9>59)
+            sec9=sec9-60;
+
+        let hrs10  = time.getHours() + 9;
+        let min10  = time.getMinutes() + 9;
+        if (min10>59)
+            min10=min10-60;
+        let sec10  = time.getSeconds() + 9;
+        if (sec10>59)
+            sec10=sec10-60;
+
+
+    document.getElementById("london").innerHTML = hrs1 + ':' + min1 + ':' + sec1 + '*' + '   GMT+0 London, Inggris';
+    document.getElementById("paris").innerHTML = hrs2 + ':' + min2 + ':' + sec2 + '*' + '   GMT+1 Paris, Perancis';
+    document.getElementById("istanbul").innerHTML = hrs3 + ':' + min3 + ':' + sec3 + '*' + '   GMT+2 Istanbul, Turki';
+    document.getElementById("moskow").innerHTML = hrs4 + ':' + min4 + ':' + sec4 + '*' + '   GMT+3 Moskow, Rusia';
+    document.getElementById("abudhabi").innerHTML = hrs5 + ':' + min5 + ':' + sec5 + '*' + '   GMT+4 Abu Dhabi, UEA';
+    document.getElementById("islamabad").innerHTML = hrs6 + ':' + min6 + ':' + sec6 + '*' + '   GMT+5 Islamabad, Pakistan';
+    document.getElementById("astana").innerHTML = hrs7 + ':' + min7 + ':' + sec7 + '*' + '   GMT+6 Astana, Kazakhstan';
+    document.getElementById("jakarta").innerHTML = hrs8 + ':' + min8 + ':' + sec8 + '*' + '   GMT+7 Jakarta, Indonesia';
+    document.getElementById("beijing").innerHTML = hrs9 + ':' + min9 + ':' + sec9 + '*' + '   GMT+8 Beijing, China';
+    document.getElementById("tokyo").innerHTML = hrs10 + ':' + min10 + ':' + sec10 + '*' + '   GMT+9 Tokyo, Jepang';
+
+  }
+
+</script>
+</body>
+</html>
